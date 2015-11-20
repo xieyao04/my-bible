@@ -21,7 +21,7 @@ character = [u'一', u'二', u'三', u'四', u'五', u'六', u'七', u'八', u'�
              u'五十六', u'五十七', u'五十八', u'五十九', u'六十', u'六十一', u'六十二', u'六十三', u'六十四', u'六十五',
              u'六十六']
 
-for book_num in range(1, 40):
+for book_num in range(40, 67):
     # document = Document()
     book_id = db.BibleID.filter(db.BibleID.SN == book_num).first()
     book = db.Bible.filter(db.Bible.VolumeSN == book_num).all()
